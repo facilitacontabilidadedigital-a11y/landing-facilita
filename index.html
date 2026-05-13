@@ -26,7 +26,6 @@
       color: var(--white);
       overflow-x: hidden;
     }
-
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
@@ -54,7 +53,6 @@
       transition: background 0.2s, transform 0.15s;
     }
     .nav-cta:hover { background: var(--green-dark); transform: translateY(-1px); }
-
     .hero {
       min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
@@ -87,7 +85,7 @@
       color: var(--green); margin-bottom: 28px;
       animation: fadeUp 0.6s ease both;
     }
-    .badge::before { content: '\25cf'; font-size: 8px; animation: pulse 2s infinite; }
+    .badge::before { content: '●'; font-size: 8px; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
     .hero h1 {
       font-size: clamp(40px, 7vw, 80px);
@@ -128,7 +126,6 @@
       from { opacity: 0; transform: translateY(24px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     .stats {
       display: flex; justify-content: center; gap: 0;
       border-top: 1px solid rgba(255,255,255,0.06);
@@ -143,7 +140,6 @@
     .stat:last-child { border-right: none; }
     .stat-num { font-size: 40px; font-weight: 900; color: var(--green); letter-spacing: -1px; }
     .stat-label { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 4px; }
-
     .section {
       padding: 100px 24px;
       max-width: 1100px; margin: 0 auto;
@@ -182,7 +178,6 @@
     .card-icon { font-size: 36px; margin-bottom: 20px; }
     .card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
     .card p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.7; }
-
     .how-section {
       padding: 100px 24px;
       background: rgba(34,197,90,0.04);
@@ -206,7 +201,6 @@
     }
     .step h4 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
     .step p { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.6; }
-
     .pricing-card {
       background: var(--navy2);
       border: 1px solid rgba(34,197,90,0.25);
@@ -234,13 +228,12 @@
       font-size: 15px; color: rgba(255,255,255,0.8);
     }
     .price-features li::before {
-      content: '\2713'; width: 22px; height: 22px;
+      content: '✓'; width: 22px; height: 22px;
       background: var(--green-light); border-radius: 50%;
       color: var(--green); font-size: 12px; font-weight: 800;
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
-
     .final-cta {
       text-align: center;
       padding: 120px 24px;
@@ -262,7 +255,6 @@
       color: rgba(255,255,255,0.5); font-size: 18px;
       margin-bottom: 44px;
     }
-
     footer {
       border-top: 1px solid rgba(255,255,255,0.06);
       padding: 32px 40px;
@@ -270,7 +262,6 @@
       flex-wrap: wrap; gap: 16px;
     }
     footer span { font-size: 13px; color: rgba(255,255,255,0.3); }
-
     .wa-float {
       position: fixed; bottom: 28px; right: 28px; z-index: 200;
       width: 60px; height: 60px; border-radius: 50%;
@@ -284,7 +275,6 @@
     .wa-float:hover { transform: scale(1.1); }
     @keyframes waIn { from{opacity:0;transform:scale(0.5)} to{opacity:1;transform:scale(1)} }
     .wa-float svg { width: 32px; height: 32px; }
-
     @media (max-width: 600px) {
       nav { padding: 16px 20px; }
       .stats { flex-wrap: wrap; }
@@ -295,7 +285,6 @@
   </style>
 </head>
 <body>
-
 <nav>
   <div class="logo">
     <div class="logo-icon">F</div>
@@ -306,104 +295,142 @@
   </div>
   <a class="nav-cta" href="https://wa.me/5511993953519?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20os%20planos!" target="_blank">Falar no WhatsApp</a>
 </nav>
-
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div style="position:relative">
     <div class="badge">CONTABILIDADE DIGITAL</div>
     <h1>Sua empresa no <span class="accent">lugar certo.</span><br />Seu contador no <span class="accent">bolso.</span></h1>
-    <p>Abertura de empresa, contabilidade mensal e gest\u00e3o fiscal 100% online. Sem burocracia, sem dor de cabe\u00e7a.</p>
+    <p>Abertura de empresa, contabilidade mensal e gestão fiscal 100% online. Sem burocracia, sem dor de cabeça.</p>
     <div class="hero-cta-group">
       <a class="btn-primary" href="https://wa.me/5511993953519?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20abrir%20minha%20empresa!" target="_blank">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.374l-.36-.214-3.732.979.994-3.638-.235-.374A9.818 9.818 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
         Quero abrir minha empresa
       </a>
-      <a class="btn-secondary" href="#servicos">Ver servi\u00e7os</a>
+      <a class="btn-secondary" href="#servicos">Ver serviços</a>
     </div>
   </div>
 </section>
-
 <div class="stats">
   <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Clientes ativos</div></div>
-  <div class="stat"><div class="stat-num">98%</div><div class="stat-label">Satisfa\u00e7\u00e3o</div></div>
+  <div class="stat"><div class="stat-num">98%</div><div class="stat-label">Satisfação</div></div>
   <div class="stat"><div class="stat-num">5 dias</div><div class="stat-label">CNPJ aprovado</div></div>
   <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Online</div></div>
 </div>
-
 <div id="servicos" class="section">
-  <div class="section-label">SERVI\u00c7OS</div>
-  <h2>Tudo que sua empresa<br />precisa em um lugar s\u00f3.</h2>
+  <div class="section-label">SERVIÇOS</div>
+  <h2>Tudo que sua empresa<br />precisa em um lugar só.</h2>
   <div class="cards">
-    <div class="card"><div class="card-icon">\ud83c\udfe2</div><h3>Abertura de Empresa</h3><p>CNPJ, enquadramento tribut\u00e1rio, regime fiscal ideal. Documenta\u00e7\u00e3o 100% online, sem sair de casa.</p></div>
-    <div class="card"><div class="card-icon">\ud83d\udcca</div><h3>Contabilidade Mensal</h3><p>Relat\u00f3rios em tempo real, apura\u00e7\u00e3o de impostos, folha de pagamento e tudo que seu neg\u00f3cio exige.</p></div>
-    <div class="card"><div class="card-icon">\ud83d\udcb0</div><h3>Planejamento Tribut\u00e1rio</h3><p>Pague menos impostos de forma legal. Nossos especialistas encontram o regime ideal para voc\u00ea.</p></div>
-    <div class="card"><div class="card-icon">\ud83d\udcf1</div><h3>Gest\u00e3o 100% Digital</h3><p>Acesse documentos, boletos e relat\u00f3rios pelo celular. Contador dedicado sempre dispon\u00edvel.</p></div>
-    <div class="card"><div class="card-icon">\ud83e\udd1d</div><h3>Contador Dedicado</h3><p>Um profissional exclusivo para sua empresa. Atendimento humanizado via WhatsApp, sem filas.</p></div>
-    <div class="card"><div class="card-icon">\u26a1</div><h3>Suporte Especializado</h3><p>MEI, ME, EPP, profissionais liberais, prestadores de servi\u00e7o. Atendemos todos os portes.</p></div>
+    <div class="card">
+      <div class="card-icon">🏢</div>
+      <h3>Abertura de Empresa</h3>
+      <p>CNPJ, enquadramento tributário, regime fiscal ideal. Documentação 100% online, sem sair de casa.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Contabilidade Mensal</h3>
+      <p>Relatórios em tempo real, apuração de impostos, folha de pagamento e tudo que seu negócio exige.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💰</div>
+      <h3>Planejamento Tributário</h3>
+      <p>Pague menos impostos de forma legal. Nossos especialistas encontram o regime ideal para você.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📱</div>
+      <h3>Gestão 100% Digital</h3>
+      <p>Acesse documentos, boletos e relatórios pelo celular. Contador dedicado sempre disponível.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <h3>Contador Dedicado</h3>
+      <p>Um profissional exclusivo para sua empresa. Atendimento humanizado via WhatsApp, sem filas.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <h3>Suporte Especializado</h3>
+      <p>MEI, ME, EPP, profissionais liberais, prestadores de serviço. Atendemos todos os portes.</p>
+    </div>
   </div>
 </div>
-
 <div class="how-section">
   <div class="how-inner">
     <div class="section-label" style="justify-content:center">COMO FUNCIONA</div>
     <h2 style="text-align:center;max-width:600px;margin:0 auto">Simples assim.</h2>
     <div class="steps-grid">
-      <div class="step"><div class="step-num">1</div><h4>Fale com a gente</h4><p>Entre em contato pelo WhatsApp e explique sua situa\u00e7\u00e3o. \u00c9 r\u00e1pido e gratuito.</p></div>
-      <div class="step"><div class="step-num">2</div><h4>Receba sua proposta</h4><p>Elaboramos uma proposta personalizada com o plano ideal para o seu neg\u00f3cio.</p></div>
-      <div class="step"><div class="step-num">3</div><h4>Envie os documentos</h4><p>Tudo online, sem sair de casa. Nossa equipe cuida de toda a burocracia.</p></div>
-      <div class="step"><div class="step-num">4</div><h4>Empresa aberta!</h4><p>CNPJ ativo em poucos dias. Seu contador dedicado j\u00e1 est\u00e1 pronto para atender.</p></div>
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Fale com a gente</h4>
+        <p>Entre em contato pelo WhatsApp e explique sua situação. É rápido e gratuito.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Receba sua proposta</h4>
+        <p>Elaboramos uma proposta personalizada com o plano ideal para o seu negócio.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Envie os documentos</h4>
+        <p>Tudo online, sem sair de casa. Nossa equipe cuida de toda a burocracia.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Empresa aberta!</h4>
+        <p>CNPJ ativo em poucos dias. Seu contador dedicado já está pronto para atender.</p>
+      </div>
     </div>
   </div>
 </div>
-
 <div class="section" style="display:flex;flex-wrap:wrap;gap:60px;align-items:center">
   <div style="flex:1;min-width:280px">
     <div class="section-label">PLANOS</div>
-    <h2>Contabilidade de qualidade<br />por um pre\u00e7o justo.</h2>
-    <p style="color:rgba(255,255,255,0.5);font-size:15px;line-height:1.7;max-width:400px">Escolha o plano ideal para o seu momento. Sem contratos longos, sem surpresas na fatura.</p>
+    <h2>Contabilidade de qualidade<br />por um preço justo.</h2>
+    <p style="color:rgba(255,255,255,0.5);font-size:15px;line-height:1.7;max-width:400px">
+      Escolha o plano ideal para o seu momento. Sem contratos longos, sem surpresas na fatura.
+    </p>
   </div>
   <div class="pricing-card">
     <div class="pricing-tag">MAIS POPULAR</div>
     <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:8px">Contabilidade Mensal</div>
-    <div class="price">R$ 297<span>/m\u00eas</span></div>
-    <div class="price-note">*Abertura de empresa com condi\u00e7\u00f5es especiais para novos clientes</div>
+    <div class="price">R$ 297<span>/mês</span></div>
+    <div class="price-note">*Abertura de empresa com condições especiais para novos clientes</div>
     <ul class="price-features">
       <li>Contador dedicado exclusivo</li>
-      <li>Apura\u00e7\u00e3o de impostos mensal</li>
-      <li>Emiss\u00e3o de notas fiscais</li>
-      <li>Relat\u00f3rios financeiros em tempo real</li>
-      <li>Gest\u00e3o de folha de pagamento</li>
+      <li>Apuração de impostos mensal</li>
+      <li>Emissão de notas fiscais</li>
+      <li>Relatórios financeiros em tempo real</li>
+      <li>Gestão de folha de pagamento</li>
       <li>Atendimento via WhatsApp</li>
     </ul>
-    <a class="btn-primary" style="width:100%;justify-content:center" href="https://wa.me/5511993953519?text=Ol%C3%A1%2C%20quero%20conhecer%20os%20planos%20de%20contabilidade%20mensal!" target="_blank">Quero esse plano</a>
+    <a class="btn-primary" style="width:100%;justify-content:center" href="https://wa.me/5511993953519?text=Ol%C3%A1%2C%20quero%20conhecer%20os%20planos%20de%20contabilidade%20mensal!" target="_blank">
+      Quero esse plano
+    </a>
   </div>
 </div>
-
 <div class="final-cta">
   <div class="final-cta-glow"></div>
   <div style="position:relative">
     <h2>Pronto para simplificar<br />sua <span style="color:var(--green)">contabilidade?</span></h2>
-    <p>Fale com um especialista agora. \u00c9 gratuito e sem compromisso.</p>
+    <p>Fale com um especialista agora. É gratuito e sem compromisso.</p>
     <a class="btn-primary" href="https://wa.me/5511993953519?text=Ol%C3%A1%2C%20quero%20uma%20consulta%20gratuita!" target="_blank" style="font-size:18px;padding:18px 48px">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.374l-.36-.214-3.732.979.994-3.638-.235-.374A9.818 9.818 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
       Falar no WhatsApp agora
     </a>
   </div>
 </div>
-
 <footer>
   <div class="logo">
     <div class="logo-icon">F</div>
-    <div class="logo-text"><strong>Facilita</strong><span>Contabilidade Digital</span></div>
+    <div class="logo-text">
+      <strong>Facilita</strong>
+      <span>Contabilidade Digital</span>
+    </div>
   </div>
-  <span>\u00a9 2025 Facilita Contabilidade Digital. Todos os direitos reservados.</span>
+  <span>© 2025 Facilita Contabilidade Digital. Todos os direitos reservados.</span>
   <span style="color:rgba(255,255,255,0.2)">facilitacontabilidadeofc.com.br</span>
 </footer>
-
 <a class="wa-float" href="https://wa.me/5511993953519?text=Ol%C3%A1%2C%20vim%20pelo%20site!" target="_blank" title="Falar no WhatsApp">
   <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.374l-.36-.214-3.732.979.994-3.638-.235-.374A9.818 9.818 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
 </a>
-
 </body>
 </html>
